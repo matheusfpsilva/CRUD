@@ -10,15 +10,13 @@ namespace CRUD
         {
             InitializeComponent();
         }
-
-
         private void limparCampos()
         {
             txtNome.Clear();
             txtEmail.Clear();
             txtCPF.Clear();
+            label5.Text = " ";
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -37,7 +35,6 @@ namespace CRUD
                     return;
                 }
                 Aluno cadastrarAluno = new Aluno();
-
                 cadastrarAluno.Nome = txtNome.Text;
                 cadastrarAluno.Email = txtEmail.Text;
                 cadastrarAluno.Cpf = txtCPF.Text;
@@ -60,7 +57,6 @@ namespace CRUD
                 MessageBox.Show("Erro ao cadastrar aluno: " + ex.Message);
             }
         }
-
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             try
@@ -71,7 +67,6 @@ namespace CRUD
                     txtCPF.Focus();
                     return;
                 }
-
                 Aluno aluno = new Aluno { Cpf = txtCPF.Text };
                 Aluno alunoEncontrado = aluno.procurarAlunoPeloCpf();
 
@@ -86,7 +81,6 @@ namespace CRUD
                     MessageBox.Show("Aluno não encontrado.");
                     limparCampos();
                     txtCPF.Focus();
-                    label5.Text = " ";
                 }
             }
             catch (Exception ex)
@@ -119,24 +113,69 @@ namespace CRUD
                     Email = txtEmail.Text,
                     Cpf = txtCPF.Text
                 };
-                if(aluno.atualizarAluno())
+                if (aluno.atualizarAluno())
                 {
                     MessageBox.Show("Aluno atualizado com sucesso!");
                     limparCampos();
                     txtNome.Focus();
-                    label5.Text = " ";
                 }
                 else
                 {
                     MessageBox.Show("Erro ao atualizar aluno.");
                 }
-
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show("Erro ao atualizar aluno: " + ex.Message);
             }
+        }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtNome.Text) ||
+                   string.IsNullOrEmpty(txtEmail.Text) ||
+                   string.IsNullOrEmpty(txtCPF.Text))
+                {
+                    MessageBox.Show("Preencha todos os campos.");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(label5.Text))
+                {
+                    MessageBox.Show("Procurar o aluno antes de deletar seus dados!");
+                    return;
+                }
+                Aluno aluno = new Aluno
+                {
+                    Id = Convert.ToInt32(label5.Text),
+                    Nome = txtNome.Text,
+                    Email = txtEmail.Text,
+                    Cpf = txtCPF.Text
+                };
+                if (aluno.deletarAluno())
+                {
+                    MessageBox.Show("Aluno excluído com sucesso!");
+                    limparCampos();
+                    txtNome.Focus();
+                    label5.Text = " ";
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao deletar aluno.");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Não foi possível deletar o aluno: " + ex);
+            }
+        }
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limparCampos();
+            txtNome.Focus();
         }
     }
 }

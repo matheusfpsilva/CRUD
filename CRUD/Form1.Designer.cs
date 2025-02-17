@@ -41,16 +41,19 @@
             lblID = new Label();
             label5 = new Label();
             btnAtualizar = new Button();
+            btnDeletar = new Button();
+            btnLimpar = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(364, 263);
+            button1.BackColor = Color.LimeGreen;
+            button1.Location = new Point(474, 263);
             button1.Name = "button1";
             button1.Size = new Size(151, 44);
             button1.TabIndex = 0;
             button1.Text = "Cadastrar";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label1
@@ -103,7 +106,7 @@
             // 
             // btnPesquisar
             // 
-            btnPesquisar.Location = new Point(69, 263);
+            btnPesquisar.Location = new Point(173, 263);
             btnPesquisar.Name = "btnPesquisar";
             btnPesquisar.Size = new Size(119, 44);
             btnPesquisar.TabIndex = 8;
@@ -113,11 +116,12 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(109, 212);
+            textBox1.BackColor = SystemColors.Window;
+            textBox1.Location = new Point(105, 212);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(79, 23);
+            textBox1.Size = new Size(59, 23);
             textBox1.TabIndex = 9;
-            textBox1.Text = "IdFuncionario";
+            textBox1.Text = "Id Aluno";
             // 
             // label4
             // 
@@ -146,7 +150,7 @@
             // 
             // btnAtualizar
             // 
-            btnAtualizar.Location = new Point(207, 263);
+            btnAtualizar.Location = new Point(315, 263);
             btnAtualizar.Name = "btnAtualizar";
             btnAtualizar.Size = new Size(133, 44);
             btnAtualizar.TabIndex = 13;
@@ -154,11 +158,34 @@
             btnAtualizar.UseVisualStyleBackColor = true;
             btnAtualizar.Click += btnAtualizar_Click;
             // 
+            // btnDeletar
+            // 
+            btnDeletar.BackColor = Color.Brown;
+            btnDeletar.Location = new Point(37, 263);
+            btnDeletar.Name = "btnDeletar";
+            btnDeletar.Size = new Size(119, 44);
+            btnDeletar.TabIndex = 14;
+            btnDeletar.Text = "Deletar";
+            btnDeletar.UseVisualStyleBackColor = false;
+            btnDeletar.Click += btnDeletar_Click;
+            // 
+            // btnLimpar
+            // 
+            btnLimpar.Location = new Point(550, 12);
+            btnLimpar.Name = "btnLimpar";
+            btnLimpar.Size = new Size(75, 23);
+            btnLimpar.TabIndex = 15;
+            btnLimpar.Text = "Limpar";
+            btnLimpar.UseVisualStyleBackColor = true;
+            btnLimpar.Click += btnLimpar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(658, 333);
+            Controls.Add(btnLimpar);
+            Controls.Add(btnDeletar);
             Controls.Add(btnAtualizar);
             Controls.Add(label5);
             Controls.Add(lblID);
@@ -193,5 +220,7 @@
         private Label lblID;
         private Label label5;
         private Button btnAtualizar;
+        private Button btnDeletar;
+        private Button btnLimpar;
     }
 }

@@ -1613,11 +1613,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matheus\\OneDrive\\Área de Trabalho\\sql\\CRUD\\CRUD\\CRUD.csproj",
+      "projectUniqueName": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\CRUD.csproj",
       "projectName": "CRUD",
-      "projectPath": "C:\\Users\\Matheus\\OneDrive\\Área de Trabalho\\sql\\CRUD\\CRUD\\CRUD.csproj",
+      "projectPath": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\CRUD.csproj",
       "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matheus\\OneDrive\\Área de Trabalho\\sql\\CRUD\\CRUD\\obj\\",
+      "outputPath": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",

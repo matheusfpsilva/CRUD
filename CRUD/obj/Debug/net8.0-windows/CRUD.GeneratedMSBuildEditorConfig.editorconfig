@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CRUD
-build_property.ProjectDir = C:\Users\Matheus\OneDrive\Área de Trabalho\sql\CRUD\CRUD\
+build_property.ProjectDir = C:\Users\Matheus\OneDrive\Documentos\GitHub\CRUD\CRUD\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
