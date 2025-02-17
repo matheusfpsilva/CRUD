@@ -7,10 +7,13 @@ O sistema permite o cadastro, consulta, atualização e exclusão de registros d
 • Framework: Windows Forms (.NET)<br />
 • Banco de Dados: MySQL<br />
 • Bibliotecas: MySql.Data (para conexão com MySQL)<br />
+## Funcionamento
 <p align="center">
   <img src="./ImagensFuncionamento/CadastrandoAluno.png" alt="Cadastro" width="550">
   <img src="./ImagensFuncionamento/CadastroAluno-SQL.png" alt="Aluno cadastrado MySql" width="550">
   <img src="./ImagensFuncionamento/PesquisarAluno.png" alt="Pesquisar Aluno" width="550">
   <img src="./ImagensFuncionamento/AtualizacaoForm.png" alt="Atualizando dados aluno" width="550">
-  <img src="./ImagensFuncionamento/AtualizacaoSQL.png" alt="Sql Atualizado" width="550">  
+  <img src="./ImagensFuncionamento/AtualizacaoSQL.png" alt="Sql Atualizado" width="550"> 
+  <img src="./ImagensFuncionamento/ExcluirAluno.png" alt="Excluindo dados aluno" width="550">
+  <img src="./ImagensFuncionamento/Aluno excluido.png" alt="Sql aaluno excluido" width="550">  
 </p>
