@@ -9,11 +9,11 @@ O sistema permite o cadastro, consulta, atualização e exclusão de registros d
 • Bibliotecas: MySql.Data (para conexão com MySQL)<br />
 
 <p align="center">
-  <img src="./ImagensFuncionamento/Form.png" alt="Form" width="504">
-  <img src="./ImagensFuncionamento/CadastrandoAluno.png" alt="Cadastro" width="500">
+  <img src="./ImagensFuncionamento/Form.png" alt="Form" width="404">
+  <img src="./ImagensFuncionamento/CadastrandoAluno.png" alt="Cadastro" width="400">
 </p>
 <p align="center">
-  <img src="./ImagensFuncionamento/CadastroAluno-SQL.png" alt="Aluno cadastrado MySql" width="500">
-  <img src="./ImagensFuncionamento/PesquisarAluno.png" alt="Pesquisar Aluno" width="500">
+  <img src="./ImagensFuncionamento/CadastroAluno-SQL.png" alt="Aluno cadastrado MySql" width="400">
+  <img src="./ImagensFuncionamento/PesquisarAluno.png" alt="Pesquisar Aluno" width="400">
 </p>
 
