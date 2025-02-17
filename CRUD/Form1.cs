@@ -1,7 +1,9 @@
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Crypto;
 using System.Drawing.Text;
-
+using System.Globalization;
+using System.Net.Mail;
+using System.Text.RegularExpressions;
 namespace CRUD
 {
     public partial class Form1 : Form
@@ -10,11 +12,23 @@ namespace CRUD
         {
             InitializeComponent();
         }
+        public bool ValidarEmail(string email)
+        {
+            try
+            {
+                MailAddress validacaoEmail = new MailAddress(email);
+                return true;
+            }
+            catch (FormatException)
+            {
+                return false;
+            }
+        }
         private void limparCampos()
         {
             txtNome.Clear();
             txtEmail.Clear();
-            txtCPF.Clear();
+            maskedBoxCpf.Clear();
             label5.Text = " ";
         }
         private void button1_Click(object sender, EventArgs e)
@@ -23,21 +37,26 @@ namespace CRUD
             {
                 if (string.IsNullOrEmpty(txtNome.Text) ||
                     string.IsNullOrEmpty(txtEmail.Text) ||
-                    string.IsNullOrEmpty(txtCPF.Text))
+                    string.IsNullOrEmpty(maskedBoxCpf.Text))
                 {
                     MessageBox.Show("Preencha todos os campos.");
                     return;
                 }
 
-                if (txtCPF.Text.Length != 11 || !txtCPF.Text.All(char.IsDigit))
+                if (maskedBoxCpf.Text.Length != 11 || !maskedBoxCpf.Text.All(char.IsDigit))
                 {
                     MessageBox.Show("CPF inválido! Digite um CPF com 11 números.");
+                    return;
+                }
+                if (!ValidarEmail(txtEmail.Text))
+                {
+                    MessageBox.Show("Email inválido! Digite um email válido.");
                     return;
                 }
                 Aluno cadastrarAluno = new Aluno();
                 cadastrarAluno.Nome = txtNome.Text;
                 cadastrarAluno.Email = txtEmail.Text;
-                cadastrarAluno.Cpf = txtCPF.Text;
+                cadastrarAluno.Cpf = maskedBoxCpf.Text;
 
                 if (cadastrarAluno.cadastrarAluno())
                 {
@@ -61,13 +80,13 @@ namespace CRUD
         {
             try
             {
-                if (string.IsNullOrEmpty(txtCPF.Text))
+                if (string.IsNullOrEmpty(maskedBoxCpf.Text))
                 {
                     MessageBox.Show("Preencha o campo CPF para pesquisar.");
-                    txtCPF.Focus();
+                    maskedBoxCpf.Focus();
                     return;
                 }
-                Aluno aluno = new Aluno { Cpf = txtCPF.Text };
+                Aluno aluno = new Aluno { Cpf = maskedBoxCpf.Text };
                 Aluno alunoEncontrado = aluno.procurarAlunoPeloCpf();
 
                 if (alunoEncontrado != null)
@@ -80,7 +99,7 @@ namespace CRUD
                 {
                     MessageBox.Show("Aluno não encontrado.");
                     limparCampos();
-                    txtCPF.Focus();
+                    maskedBoxCpf.Focus();
                 }
             }
             catch (Exception ex)
@@ -96,7 +115,7 @@ namespace CRUD
             {
                 if (string.IsNullOrEmpty(txtNome.Text) ||
                     string.IsNullOrEmpty(txtEmail.Text) ||
-                    string.IsNullOrEmpty(txtCPF.Text))
+                    string.IsNullOrEmpty(maskedBoxCpf.Text))
                 {
                     MessageBox.Show("Preencha todos os campos.");
                     return;
@@ -106,12 +125,17 @@ namespace CRUD
                     MessageBox.Show("Procurar o aluno antes de atualizar seus dados!");
                     return;
                 }
+                if (!ValidarEmail(txtEmail.Text))
+                {
+                    MessageBox.Show("Email inválido! Digite um email válido.");
+                    return;
+                }
                 Aluno aluno = new Aluno
                 {
                     Id = Convert.ToInt32(label5.Text),
                     Nome = txtNome.Text,
                     Email = txtEmail.Text,
-                    Cpf = txtCPF.Text
+                    Cpf = maskedBoxCpf.Text
                 };
                 if (aluno.atualizarAluno())
                 {
@@ -137,7 +161,7 @@ namespace CRUD
             {
                 if (string.IsNullOrEmpty(txtNome.Text) ||
                    string.IsNullOrEmpty(txtEmail.Text) ||
-                   string.IsNullOrEmpty(txtCPF.Text))
+                   string.IsNullOrEmpty(maskedBoxCpf.Text))
                 {
                     MessageBox.Show("Preencha todos os campos.");
                     return;
@@ -152,7 +176,7 @@ namespace CRUD
                     Id = Convert.ToInt32(label5.Text),
                     Nome = txtNome.Text,
                     Email = txtEmail.Text,
-                    Cpf = txtCPF.Text
+                    Cpf = maskedBoxCpf.Text
                 };
                 if (aluno.deletarAluno())
                 {

@@ -26,33 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Form1.cs",
-              "RelativeDocumentMoniker": "CRUD\\Form1.cs",
-              "ToolTip": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Form1.cs [Projeto]",
-              "RelativeToolTip": "CRUD\\Form1.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:32:13.475Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Aluno.cs",
-              "DocumentMoniker": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Aluno.cs",
-              "RelativeDocumentMoniker": "CRUD\\Aluno.cs",
-              "ToolTip": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Aluno.cs",
-              "RelativeToolTip": "CRUD\\Aluno.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAAwH4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T21:32:25.814Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -64,6 +39,36 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T21:18:27.56Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Form1.cs",
+              "RelativeDocumentMoniker": "CRUD\\Form1.cs",
+              "ToolTip": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Form1.cs [Projeto]",
+              "RelativeToolTip": "CRUD\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T17:59:31.715Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Aluno.cs",
+              "DocumentMoniker": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Aluno.cs",
+              "RelativeDocumentMoniker": "CRUD\\Aluno.cs",
+              "ToolTip": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Aluno.cs",
+              "RelativeToolTip": "CRUD\\Aluno.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAuwBAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T21:32:25.814Z",
               "EditorCaption": ""
             },
             {
@@ -74,7 +79,7 @@
               "RelativeDocumentMoniker": "CRUD\\Form1.cs",
               "ToolTip": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Form1.cs",
               "RelativeToolTip": "CRUD\\Form1.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAcwAsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T16:27:29.264Z",
               "EditorCaption": ""

@@ -33,7 +33,6 @@
             label2 = new Label();
             label3 = new Label();
             txtNome = new TextBox();
-            txtCPF = new TextBox();
             txtEmail = new TextBox();
             btnPesquisar = new Button();
             textBox1 = new TextBox();
@@ -43,6 +42,8 @@
             btnAtualizar = new Button();
             btnDeletar = new Button();
             btnLimpar = new Button();
+            maskedTextBoxCpf = new MaskedTextBox();
+            maskedBoxCpf = new MaskedTextBox();
             SuspendLayout();
             // 
             // button1
@@ -68,7 +69,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(109, 109);
+            label2.Location = new Point(105, 109);
             label2.Name = "label2";
             label2.Size = new Size(28, 15);
             label2.TabIndex = 2;
@@ -77,7 +78,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(109, 158);
+            label3.Location = new Point(105, 146);
             label3.Name = "label3";
             label3.Size = new Size(36, 15);
             label3.TabIndex = 3;
@@ -90,16 +91,9 @@
             txtNome.Size = new Size(395, 23);
             txtNome.TabIndex = 5;
             // 
-            // txtCPF
-            // 
-            txtCPF.Location = new Point(174, 101);
-            txtCPF.Name = "txtCPF";
-            txtCPF.Size = new Size(394, 23);
-            txtCPF.TabIndex = 6;
-            // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(174, 150);
+            txtEmail.Location = new Point(172, 138);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(394, 23);
             txtEmail.TabIndex = 7;
@@ -179,11 +173,29 @@
             btnLimpar.UseVisualStyleBackColor = true;
             btnLimpar.Click += btnLimpar_Click;
             // 
+            // maskedTextBoxCpf
+            // 
+            maskedTextBoxCpf.Location = new Point(0, 0);
+            maskedTextBoxCpf.Mask = "000.000.000-00";
+            maskedTextBoxCpf.Name = "maskedTextBoxCpf";
+            maskedTextBoxCpf.Size = new Size(100, 23);
+            maskedTextBoxCpf.TabIndex = 0;
+            // 
+            // maskedBoxCpf
+            // 
+            maskedBoxCpf.Location = new Point(173, 101);
+            maskedBoxCpf.Mask = "000,000,000-00";
+            maskedBoxCpf.Name = "maskedBoxCpf";
+            maskedBoxCpf.Size = new Size(393, 23);
+            maskedBoxCpf.TabIndex = 16;
+            maskedBoxCpf.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(658, 333);
+            Controls.Add(maskedBoxCpf);
             Controls.Add(btnLimpar);
             Controls.Add(btnDeletar);
             Controls.Add(btnAtualizar);
@@ -193,7 +205,6 @@
             Controls.Add(textBox1);
             Controls.Add(btnPesquisar);
             Controls.Add(txtEmail);
-            Controls.Add(txtCPF);
             Controls.Add(txtNome);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -212,7 +223,6 @@
         private Label label2;
         private Label label3;
         private TextBox txtNome;
-        private TextBox txtCPF;
         private TextBox txtEmail;
         private Button btnPesquisar;
         private TextBox textBox1;
@@ -222,5 +232,7 @@
         private Button btnAtualizar;
         private Button btnDeletar;
         private Button btnLimpar;
+        private MaskedTextBox maskedTextBoxCpf;
+        private MaskedTextBox maskedBoxCpf;
     }
 }
