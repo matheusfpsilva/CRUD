@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|solutionrelative:crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|c:\\users\\matheus\\onedrive\\documentos\\github\\crud\\crud\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|solutionrelative:crud\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|c:\\users\\matheus\\onedrive\\documentos\\github\\crud\\crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|solutionrelative:crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|c:\\users\\matheus\\onedrive\\documentos\\github\\crud\\crud\\conexaobanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|solutionrelative:crud\\conexaobanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|c:\\users\\matheus\\onedrive\\documentos\\github\\crud\\crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|solutionrelative:crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|c:\\users\\matheus\\onedrive\\documentos\\github\\crud\\crud\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F36E3E81-C354-4EDA-8AF0-39A420AC6B75}|CRUD\\CRUD.csproj|solutionrelative:crud\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ConexaoBanco.cs",
               "DocumentMoniker": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\ConexaoBanco.cs",
               "RelativeDocumentMoniker": "CRUD\\ConexaoBanco.cs",
@@ -39,8 +39,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T21:18:27.56Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -48,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Form1.cs",
               "RelativeDocumentMoniker": "CRUD\\Form1.cs",
@@ -60,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Aluno.cs",
               "DocumentMoniker": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Aluno.cs",
               "RelativeDocumentMoniker": "CRUD\\Aluno.cs",
@@ -73,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Matheus\\OneDrive\\Documentos\\GitHub\\CRUD\\CRUD\\Form1.cs",
               "RelativeDocumentMoniker": "CRUD\\Form1.cs",
